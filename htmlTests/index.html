@@ -1,0 +1,166 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style ref="index.css" ></style>
+    <title>Document</title>
+</head>
+<body>
+<form>
+     <label for="name">Name</label>
+    <input  id="name" type="text" name="name"/>
+    <label for="email">Email</label>
+    <input  id="email" type="email" name="email"/>
+    <label for="password">Password</label>
+    <input  id="password" type="password" name="password" minlength="8" required />
+      <fieldset >
+    <legend>Referrer</legend>
+
+    <input type="radio" id="tv" value="1" name="tv"> 
+    <label for="tv">TV</label><br/>
+
+    <input type="radio" id="internet" value="1" name="tv" >
+    <label for="internet">Internet</label><br/>
+
+    <input type="radio" id="none" value="1" name="tv"  checked>
+    <label for="none">None</label>
+  </fieldset>
+  <input type="checkbox" id="checkbox"/>
+    <label for="checkbox">I accept the terms of service</label>
+</form> -->
+
+<!-- </body> -->
+<!-- </html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="solution.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #container {
+            width: 960px;
+            margin: 50px auto;
+        }
+
+        #nav {
+            font-weight: 300;
+            font-size: 15px;
+        }
+
+        #nav ul {
+            background: #cfcfcf;
+            height: 40px;
+            list-style: none;
+        }
+
+        #nav > li > ul {
+            position: absolute;
+        }
+
+        #nav li a {
+            background: #cfcfcf;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            line-height: 40px;
+            padding: 0px 25px;
+        }
+
+        #nav li a:hover {
+            text-decoration: none;
+            background: #915fa6;
+            color: #FFFFFF;
+        }
+
+
+
+        #nav li ul {
+            background: #000000;
+            display: none;
+            height: auto;
+            width: 100%;
+        }
+
+        #nav li li{
+            width: 100%;
+        }
+
+        #nav li ul a {
+            text-align: left;
+            display: block;
+            height: 40px;
+            padding: 0px 10px 0px 25px;
+        }
+        #nav > ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+#nav ul li {
+    position: relative; 
+    flex: 1;
+}
+#nav ul  li  a { 
+    display: block;
+}
+#nav ul li ul {
+        position: absolute;
+        top: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: none;
+        line-height: normal;
+}
+#nav ul li:hover > ul {
+    display: block
+}
+#nav ul li ul li ul {
+            left: 100%;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Menu 1</a>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Submenu</a>
+                        <ul>
+                            <li><a href="#">Link1</a></li>
+                            <li><a href="#">Link2</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Menu 2</a>
+                <ul>
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Submenu1</a>
+                        <ul>
+                            <li><a href="#">Link1</a></li>
+                            <li><a href="#">Link2</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Link2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Link 2</a></li>
+        </ul>
+    </div>
+</body>
+</html>
